@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: urls
+#
+#  id         :integer          not null, primary key
+#  input      :string(255)
+#  code       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  input: MyString
+  code: MyString
+
+two:
+  input: MyString
+  code: MyString

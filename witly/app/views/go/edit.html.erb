@@ -1,0 +1,10 @@
+<h1>Let's edit your Link</h1>
+
+<%= form_for :url, method: :put, url: link_update_path do |u|%> 
+
+	<%= label_tag(:input, "Link:") %> <%= u.text_field :input, value: @url['input'] %> <br>
+  
+    <%= u.submit "Update link" %>
+<% end %>
+
+<a href="go/index">Show All Searches</a>

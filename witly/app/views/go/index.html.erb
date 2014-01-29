@@ -1,0 +1,15 @@
+<h1>Witly App Index</h1>
+<a href="/">Back to Search</a>
+<% @urls.each do |u| %>
+        <div>
+            Input:  <%= u.input %> <br>
+            Code: <%= u.code %> <br>
+            Visits: <br>
+        </div>
+        <ul> 
+        	<li> <button> <a href="edit/<%= u.id %> ">Edit</a></button> </li>
+
+        	<li><%= link_to "Delete", destroy_path(u.id), :method => :delete, :confirm => "Are you sure?" %> </li>
+        </ul>
+<% end %>
+

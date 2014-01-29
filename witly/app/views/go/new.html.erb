@@ -1,0 +1,11 @@
+<h1>Welcome to Wit.ly</h1>
+
+<%= form_for @url do |u|%>  <!-- passes input back to root  "/go/" upon submission -->
+
+	<%= u.text_field :input, placeholder: "enter your link" %> <br>
+   
+   <% u.submit class: "btn btn-primary" %>
+    <%= u.submit  %>
+<% end %>
+
+<a href="go/index">Show All Searches</a>
